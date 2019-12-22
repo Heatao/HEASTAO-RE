@@ -30,6 +30,8 @@ bert代码源自王树义老师的封装
 
 ## 实现过程
 
+Demo由两部分组成，命名实体识别和关系抽取，命名实体识别直接调用*nltk.chunk.ne_chunk*得到实体再经过简单的处理，关系抽取在SemEval2010数据集下是一个10分类任务，这里采用了bert的分类，svm+glove和svm+ifidf的分类。
+
 - 界面采用pyqt
 
 - NER是调用的nltk
